@@ -1,0 +1,135 @@
+header {
+    background-color: #00274C;
+}
+
+nav {
+    display: grid;
+    justify-content: center;
+    background: #00274C;
+    height: 150%;
+    margin: 15px 15px 15px 15px;
+}
+
+nav a {
+    font-family: sans-serif;
+    color: #FFCB05;
+    text-decoration: none;
+    font-size: 125%;
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+    color: #FFCB05;
+    font-family: sans-serif;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+    border: 2px solid #FFFFFF
+}
+
+.skip a:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    top: 20px;
+    border: 2px solid #00274C;
+    font-family: sans-serif;
+    color: #FFCB05;
+    border: 2px solid #FFFFFF;
+}
+
+.skip a {
+    position: absolute;
+    top: -40px;
+    color: #FFCB05;
+}
+
+*:focus {
+    outline: none;
+    border: 2px solid #00274C;
+}
+
+.footer {
+    display: inline;
+    font-size: 125%;
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+.footer a {
+    color: #00274C;
+}
+
+body {
+    background:#FFCB05;
+    margin: 1%;
+    font-size: 125%;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #00274C;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr;
+    justify-content: center;
+    background: #FFCB05;
+    gap: 15px;
+    justify-items: center;
+    color: #00274C;
+    font-family: sans-serif;
+    margin: 10% 10% 10% 10%;
+}
+
+.container p {
+    text-align: center;
+    margin: 15px;
+}
+
+.container img {
+    width: 80%;
+    border: 10px solid #00274C;
+    display: block;
+    margin: auto;
+    gap: 20px;
+    justify-self: center;
+    align-self: center;
+}
+
+.container ul {
+    justify-items: center;
+}
+
+.list p {
+    font-weight: bold;
+}
+
+header img {
+    min-height: 75px;
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+.active {
+    text-decoration: underline;
+}
