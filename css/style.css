@@ -127,22 +127,6 @@ img {
     margin: 15px;
 }
 
-/* Caps styling
-
-.container div.caps_info {
-    grid-column: 1 / -1;
-}
-
-.container div.urgent {
-    grid-column: 1 / -1;
-}
-
-.continer div.location_hours {
-    grid-column: 1 / -1;
-}
-
-*/
-
 .container img {
     width: 80%;
     border: 10px solid #00274C;
@@ -185,8 +169,13 @@ header img {
     font-size: 150%
 }
 
+.container a:hover {
+    border: 2px solid #00274C;
+    transition: 0.3s;
+}
+
 @media (prefers-reduced-motion: reduce) {
-    nav a, .skip a, .footer a {
+    nav a, .skip a, .footer a, .container a:hover {
         transition: none;
     }
 }
