@@ -103,7 +103,11 @@
         <div class = "container">
             <p><a href = "https://www.si.umich.edu/">UMSI Website</a></p>
             <p><a href = "https://www.si.umich.edu/about-umsi/contact-us">UMSI Contact Page</a></p>
+            <p class = "date">Copyright <span id= "year"></span></p>
         </div>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>

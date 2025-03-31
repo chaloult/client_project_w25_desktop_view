@@ -26,11 +26,13 @@
 
         <h1>Maize & Blue Cupboard</h1>
 
-        <div>
+        <div class = "food_info">
             <p>The University of Michigan University Maize & Blue Cupboard is an on-campus food pantry dedicated to ensuring that everybody in the UMich community has equitable access to healthy and nutritious food.</p>
+        </div>
+        <div class = "food_info">
             <p>Shopping at Maize & Blue Cupboard is by appointment only. See the link below to make an appointment.</p>
         </div>
-        <div>
+        <div class = "food_overview">
             <p>Here is an overview of what they offer:</p>
             <ul>
                 <li>Food</li>
@@ -72,7 +74,11 @@
         <div class = "container">
             <p><a href = "https://www.si.umich.edu/">UMSI Website</a></p>
             <p><a href = "https://www.si.umich.edu/about-umsi/contact-us">UMSI Contact Page</a></p>
+            <p class = "date">Copyright <span id= "year"></span></p>
         </div>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
     </footer>
     
 </body>

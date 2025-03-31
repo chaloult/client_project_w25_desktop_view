@@ -15,6 +15,8 @@ nav a {
     color: #FFCB05;
     text-decoration: none;
     font-size: 125%;
+    line-height: 150%;
+    transition: 0.3s;
 }
 
 nav li {
@@ -22,6 +24,7 @@ nav li {
     text-align: center;
     color: #FFCB05;
     font-family: sans-serif;
+    line-height: 150%;
 }
 
 nav a:hover, nav a:focus {
@@ -44,6 +47,7 @@ nav a:hover, nav a:focus {
     position: absolute;
     top: -40px;
     color: #FFCB05;
+    transition: 0.3s;
 }
 
 *:focus {
@@ -54,12 +58,17 @@ nav a:hover, nav a:focus {
 .footer {
     display: inline;
     font-size: 125%;
-    background-color: #00274C;
+    background: #00274C;
     color: #FFCB05;
 }
 
 .footer a {
     color: #00274C;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    border: 2px solid #00274C;
 }
 
 body {
@@ -75,12 +84,15 @@ h1 {
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
+    grid-column: 1 / -1;
+    line-height: 1.5em;
 }
 
 h2 {
     text-align: center;
     font-weight: bold;
     text-decoration: underline;
+    grid-column: 1 / -1;
 }
 
 img {
@@ -90,7 +102,7 @@ img {
 
 .container {
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     background: #FFCB05;
     gap: 15px;
@@ -98,12 +110,38 @@ img {
     color: #00274C;
     font-family: sans-serif;
     margin: 10% 10% 10% 10%;
+    line-height: 145%;
+}
+
+.container div {
+    display: grid;
+    grid-column: 1 / -1;
+}
+
+.container section {
+    grid-column: 1 / -1;
 }
 
 .container p {
     text-align: center;
     margin: 15px;
 }
+
+/* Caps styling
+
+.container div.caps_info {
+    grid-column: 1 / -1;
+}
+
+.container div.urgent {
+    grid-column: 1 / -1;
+}
+
+.continer div.location_hours {
+    grid-column: 1 / -1;
+}
+
+*/
 
 .container img {
     width: 80%;
@@ -113,6 +151,7 @@ img {
     gap: 20px;
     justify-self: center;
     align-self: center;
+    grid-column: 1 / -1;
 }
 
 .container ul {
@@ -132,4 +171,71 @@ header img {
 
 .active {
     text-decoration: underline;
+}
+
+.footer p.date {
+    grid-column: 1 / -1;
+}
+
+.container div.error {
+    font-size: 125%;
+}
+
+.container h1.error {
+    font-size: 150%
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        align-items: center;
+    }
+
+    .container div {
+        grid-column: span 1;
+    }
+
+    .container section {
+        grid-column: span 1;
+    }
+
+    .container div.caps_info:nth-of-type(3) {
+        grid-column: 1 / -1;
+    }
+
+    header img {
+        width: 20%;
+    }
+
+    .container p {
+        font-size: 125%;
+        line-height: 145%;
+    }
+
+    h2 {
+        font-size: 150%;
+        line-height: 170%;
+    }
+
+    .container li {
+        font-size: 120%;
+        line-height: 140%;
+    }
+
+    nav a, nav li {
+        font-size: 125%;
+        line-height: 150%;
+    }
+
+    .container div.studying {
+        grid-column: 1 / -1;
+        width: 75%;
+    }
+
+    .container div.tutor {
+        grid-column: 1 / -1;
+    }
+
+    .container div.error {
+        grid-column: 1 / -1;
+    }
 }
